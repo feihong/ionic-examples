@@ -28,10 +28,10 @@
       </ion-input>
 
       <ion-item class="item-divider">Toggle and checkbox</ion-item>
-      <ion-toggle ng-model="settings.enableFriends">
-        Enable Friends
-      </ion-toggle>
-      <ion-checkbox>Checky McCheckbox</ion-checkbox>
+      <ion-toggle ng-model="settings.enableFriends">Toggle McToggle</ion-toggle>
+      <ion-toggle toggle-class="toggle-royal" ng-model="settings.royalToggle">Royal toggle</ion-toggle>
+      <ion-checkbox ng-model="settings.checky">Checky McCheckbox</ion-checkbox>
+      <ion-checkbox class="checkbox-assertive" ng-model="settings.assertive">Assertive checkbox</ion-checkbox>
 
       <ion-item class="item-divider">Radio buttons</ion-item>
       <ion-radio ng-model="choice">Choose A</ion-radio>
