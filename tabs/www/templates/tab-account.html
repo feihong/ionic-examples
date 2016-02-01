@@ -1,0 +1,43 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-divider">Text input</ion-item>
+
+      <ion-input class="item item-input">
+        <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input">
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+      <ion-input class="item item-input">
+        <i class="icon ion-music-note"></i>
+        <ion-label>Inline label</ion-label>
+        <input type="text">
+      </ion-input>
+      <ion-input class="item item-input">
+        <ion-label>Inline label</ion-label>
+        <input type="number">
+      </ion-input>
+
+      <ion-item class="item-divider">Toggle and checkbox</ion-item>
+      <ion-toggle ng-model="settings.enableFriends">
+        Enable Friends
+      </ion-toggle>
+      <ion-checkbox>Checky McCheckbox</ion-checkbox>
+
+      <ion-item class="item-divider">Radio buttons</ion-item>
+      <ion-radio ng-model="choice">Choose A</ion-radio>
+      <ion-radio ng-model="choice">Choose B</ion-radio>
+      <ion-radio ng-model="choice">Choose C</ion-radio>
+      <ion-radio ng-model="choice">Choose D</ion-radio>
+    </ion-list>
+  </ion-content>
+</ion-view>
