@@ -12,6 +12,15 @@ npm install -g cordova ionic
 npm install -g ios-sim android-sim
 ```
 
+## Commands
+
+|-------------|-----------------|
+| **Command** | **Description** |
+| `ionic serve` | Preview your app in the browser |
+| `ionic start --list` | List all starter templates |
+| `ionic start -t blank project-name` | Start a blank project |
+| `ionic setup sass | Make `ionic serve` also watch for changes to ionic.app.scss |
+
 ## Documentation links
 
 - [CSS Components](http://ionicframework.com/docs/components/)
