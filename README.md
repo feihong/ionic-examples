@@ -20,6 +20,7 @@ npm install -g ios-sim android-sim
 | `ionic start --list` | List all starter templates |
 | `ionic start -t blank project-name` | Start a blank project |
 | `ionic setup sass | Make `ionic serve` also watch for changes to ionic.app.scss |
+| `ionic emulate ios -l -c` | Run your app inside the iOS Simulator with live reload and logging to console |
 
 ## Documentation links
 
