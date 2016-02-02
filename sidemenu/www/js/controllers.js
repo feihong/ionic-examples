@@ -61,6 +61,9 @@ angular.module('starter.controllers', [])
   $scope.colorNames = ['positive', 'calm', 'balanced', 'energized', 'assertive',
     'royal', 'dark']
 
+  $scope.iconNames = ['home', 'star', 'gear-a', 'settings', 'music-note',
+    'navicon', 'clock', 'leaf', 'trophy', 'jet']
+
   $scope.showAlert = function(colorName) {
     var alert = $ionicPopup.alert({
       title: 'Thanks for clicking!',

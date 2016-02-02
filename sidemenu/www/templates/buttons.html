@@ -25,12 +25,26 @@
     <div class='padding'>
       <h3>Outlined, colored buttons:</h3>
       <button ng-repeat='colorName in colorNames'
-        ng-click='showAlert(colorName)'
-        ng-class="['button-' + colorName, 'button', 'button-block', 'button-outline']">
+              ng-click='showAlert(colorName)'
+              ng-class="['button-' + colorName, 'button', 'button-block', 'button-outline']">
         {{colorName}}
       </button>
 
+      <h3>Icon buttons</h3>
+      <button ng-repeat='iconName in iconNames'
+              ng-class="['button', 'button-outline', 'icon', 'ion-'+iconName]"></button>
 
+      <h3>Button bars</h3>
+      <div class="button-bar">
+        <a class="button">First</a>
+        <a class="button">Second</a>
+        <a class="button">Third</a>
+      </div>
+      <div class="button-bar bar-positive">
+        <a class="button">First</a>
+        <a class="button">Second</a>
+        <a class="button">Third</a>
+      </div>
     </div>
   </ion-content>
 </ion-view>
