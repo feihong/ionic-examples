@@ -66,10 +66,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.video', {
+      url: '/video',
+      views: {
+        menuContent: {
+          templateUrl: 'templates/video.html'
+        }
+      }
+    })
     .state('app.playlists', {
       url: '/playlists',
       views: {
-        'menuContent': {
+        menuContent: {
           templateUrl: 'templates/playlists.html',
           controller: 'PlaylistsCtrl'
         }
@@ -78,7 +86,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     .state('app.single', {
       url: '/playlists/:playlistId',
       views: {
-        'menuContent': {
+        menuContent: {
           templateUrl: 'templates/playlist.html',
           controller: 'PlaylistCtrl'
         }
