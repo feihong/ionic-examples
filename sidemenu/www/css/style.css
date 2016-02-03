@@ -1,1 +1,15 @@
-/* Empty. Add your own CSS if you like */
+.slide-cool {
+  height: 210px;
+}
+
+.slide-red {
+  background-color: lightcoral;
+}
+
+.slide-blue {
+  background-color: powderblue;
+}
+
+.slide-green {
+  background-color: mediumaquamarine;
+}

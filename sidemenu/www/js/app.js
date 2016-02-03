@@ -57,6 +57,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.slidebox', {
+      url: '/slidebox',
+      views: {
+        menuContent: {
+          templateUrl: 'templates/slidebox.html',
+          controller: 'SlideBoxCtrl'
+        }
+      }
+    })
     .state('app.playlists', {
       url: '/playlists',
       views: {

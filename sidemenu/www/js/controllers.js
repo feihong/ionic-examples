@@ -71,7 +71,7 @@ angular.module('starter.controllers', [])
       okType: 'button-' + colorName,
     })
     alert.then(function(result) {
-      console.log(colorName + ' alert was closed with result: ' + result);
+      console.log(colorName + ' alert was closed with result: ' + result)
     })
   }
 })
@@ -92,4 +92,13 @@ angular.module('starter.controllers', [])
     var index = Math.floor(Math.random() * adjectives.length)
     return adjectives[index]
   })
+})
+
+.controller('SlideBoxCtrl', function($scope) {
+  $scope.titles = ['The Hunger Games', 'Catching Fire', 'Mockingjay']
+  $scope.colors = ['blue', 'red', 'green']
+
+  $scope.slideHasChanged = function(index) {
+    console.log('Slide changed to ' + index)
+  }
 })
