@@ -75,3 +75,10 @@ angular.module('starter.controllers', [])
     })
   }
 })
+
+.controller('FormsCtrl', function($scope) {
+  $scope.bool1 = false
+  $scope.bool2 = true
+  $scope.bool3 = true
+  $scope.bool4 = false
+})

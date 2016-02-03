@@ -39,6 +39,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.forms', {
+      url: '/forms',
+      views: {
+        menuContent: {
+          templateUrl: 'templates/forms.html',
+          controller: 'FormsCtrl'
+        }
+      }
+    })
     .state('app.playlists', {
       url: '/playlists',
       views: {

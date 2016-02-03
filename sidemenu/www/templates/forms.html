@@ -1,0 +1,83 @@
+<ion-view view-title='Form Elements'>
+  <ion-content>
+    <h3 class='padding'>Text input</h3>
+    <ion-list>
+      <ion-input class="item item-input">
+          <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input item-floating-label">
+        <ion-label>Floating label</ion-label>
+        <input type="text" placeholder="Floating label">
+      </ion-input>
+    </ion-list>
+
+    <h3 class='padding'>Text area</h3>
+    <ion-list>
+      <ion-input class="item item-input">
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+    </ion-list>
+
+    <h3 class='padding'>Toggle</h3>
+    <ion-list>
+      <ion-toggle ng-model='bool1'>Normal toggle</ion-toggle>
+      <ion-toggle ng-model='bool2' toggle-class='toggle-royal'>Royal toggle</ion-toggle>
+    </ion-list>
+
+    <h3 class='padding'>Checkbox</h3>
+    <ion-list>
+      <ion-checkbox ng-model='bool3'>Normal checkbox</ion-checkbox>
+      <ion-checkbox ng-model='bool4' class="checkbox-assertive">Assertive checkbox</ion-checkbox>
+    </ion-list>
+
+    <h3 class='padding'>Radio buttons</h3>
+    <ion-list>
+      <ion-radio ng-model="choice">Choose A</ion-radio>
+      <ion-radio ng-model="choice">Choose B</ion-radio>
+      <ion-radio ng-model="choice">Choose C</ion-radio>
+      <ion-radio ng-model="choice">Choose D</ion-radio>
+    </ion-list>
+
+    <h3 class='padding'>Range</h3>
+    <ion-list>
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+      <div class="item range range-positive">
+        <i class="icon ion-ios-sunny-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+    </ion-list>
+
+    <h3 class='padding'>Select</h3>
+    <ion-list>
+      <div class="item item-input item-select">
+        <ion-label>Lightsaber</ion-label>
+        <select>
+          <option>Blue</option>
+          <option selected>Green</option>
+          <option>Red</option>
+        </select>
+      </div>
+      <div class="item item-input item-select">
+        <ion-label>Dessert</ion-label>
+        <select>
+          <option selected>Tiramisu</option>
+          <option>Cheesecake</option>
+          <option>Azuki Choux</option>
+        </select>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
