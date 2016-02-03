@@ -82,3 +82,14 @@ angular.module('starter.controllers', [])
   $scope.bool3 = true
   $scope.bool4 = false
 })
+
+.controller('CardsCtrl', function($scope) {
+  $scope.persons = ['magnetman', 'shadowman', 'snakeman', 'sparkman']
+
+  var adjectives = ['crazy', 'fun', 'weird', 'lugubrious']
+
+  $scope.adjectives = adjectives.map(function(x) {
+    var index = Math.floor(Math.random() * adjectives.length)
+    return adjectives[index]
+  })
+})
