@@ -9731,6 +9731,10 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+/* cards */
+ion-view.cards img {
+  background-color: lavender; }
+
 /* ion-slide-box */
 div.slider .slide-cool {
   height: 210px; }
@@ -9759,3 +9763,13 @@ Source: https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-a
     left: 0;
     width: 100%;
     height: 100%; }
+
+.robot-container {
+  display: flex;
+  flex-direction: row; }
+  .robot-container .robot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px solid gray; }
