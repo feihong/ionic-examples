@@ -12,6 +12,14 @@ npm install -g cordova ionic
 npm install -g ios-sim android-sim
 ```
 
+To make the Invoke tasks work, you'll need to install some Python dependencies:
+
+```
+pip install virtualenvwrapper
+mkvirtualenv static-site
+pip install invoke
+```
+
 ## Commands
 
 |-------------|-----------------|
@@ -21,6 +29,9 @@ npm install -g ios-sim android-sim
 | `ionic start -t blank project-name` | Start a blank project |
 | `ionic setup sass | Make `ionic serve` also watch for changes to ionic.app.scss |
 | `ionic emulate ios -l -c` | Run your app inside the iOS Simulator with live reload and logging to console |
+| `invoke build` | Copy www directories into a build directory |
+| `invoke serve` | Run a local HTTP server on port 8000 that serves the build directory |
+| `invoke publish` | Create the build directory and publish it to GitHub Pages |
 
 ## Documentation links
 
