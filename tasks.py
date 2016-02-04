@@ -16,6 +16,7 @@ def serve():
 
 @task
 def build():
+    www_dirs = []
     clean()
     if not op.exists('build'):
         os.mkdir('build')
@@ -23,11 +24,16 @@ def build():
         if item.is_dir():
             www_dir = item / 'www'
             if not item.name.startswith('.') and www_dir.is_dir():
+                www_dirs.append(item.name)
                 src = item / 'www'
                 dest = Path('build') / item.name
                 print 'Copying %s to %s' % (src, dest)
                 run('cp -r %s %s' % (src, dest))
-
+    with open('build/index.html', 'w') as fp:
+        fp.write('<ul>')
+        for www_dir in www_dirs:
+            fp.write('<li><a href="%s">%s</a></li>' % (www_dir, www_dir))
+        fp.write('</ul>')
 
 @task
 def clean():
