@@ -1,7 +1,7 @@
 <ion-view view-title='Flexbox'>
   <ion-content class='padding'>
     <div class='robot-container'>
-      <div class='robot' ng-repeat='robot in robots'>
+      <div class='robot' ng-repeat='robot in robots track by $index'>
         <img src='img/{{robot}}.png'>
         <div>{{robot}}</div>
       </div>

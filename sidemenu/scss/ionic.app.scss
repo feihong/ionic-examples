@@ -69,6 +69,7 @@ Source: https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-a
 .robot-container {
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
 
   .robot {
     display: flex;

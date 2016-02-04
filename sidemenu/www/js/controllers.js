@@ -74,5 +74,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FlexboxCtrl', function($scope) {
-  $scope.robots = ['magnetman', 'shadowman', 'snakeman', 'sparkman']
+  $scope.robots = ['magnetman', 'shadowman', 'snakeman', 'sparkman',
+    'magnetman', 'shadowman']
 })
