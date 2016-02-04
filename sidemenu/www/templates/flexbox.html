@@ -1,10 +1,12 @@
 <ion-view view-title='Flexbox'>
   <ion-content class='padding'>
-    <div class='robot-container'>
-      <div class='robot' ng-repeat='robot in robots track by $index'>
-        <img src='img/{{robot}}.png'>
-        <div>{{robot}}</div>
+    <ion-scroll direction='x' scrollbar-x='false' style='width: 320px; height: 120px;'>
+      <div class='robot-container'>
+        <div class='robot' ng-repeat='robot in robots track by $index'>
+          <img src='img/{{robot}}.png'>
+          <div>{{robot}}</div>
+        </div>
       </div>
-    </div>
+    </ion-scroll>
   </ion-content>
 </ion-view>
