@@ -72,3 +72,7 @@ angular.module('starter.controllers', [])
     console.log('Slide changed to ' + index)
   }
 })
+
+.controller('FlexboxCtrl', function($scope) {
+  $scope.robots = ['magnetman', 'shadowman', 'snakeman', 'sparkman']
+})

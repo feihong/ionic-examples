@@ -74,6 +74,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.flexbox', {
+      url: '/flexbox',
+      views: {
+        menuContent: {
+          templateUrl: 'templates/flexbox.html',
+          controller: 'FlexboxCtrl'
+        }
+      }
+    })
     .state('app.playlists', {
       url: '/playlists',
       views: {

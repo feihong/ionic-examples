@@ -9771,5 +9771,9 @@ Source: https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-a
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 5px;
-    border: 1px solid gray; }
+    margin-right: 15px; }
+    .robot-container .robot img {
+      background-color: thistle;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px; }
