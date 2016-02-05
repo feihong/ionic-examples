@@ -9731,11 +9731,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-/* cards */
 ion-view.cards img {
   background-color: lavender; }
 
-/* slidebox */
 ion-view.slidebox div.slider {
   height: 210px; }
 
@@ -9748,33 +9746,30 @@ ion-view.slidebox .slide-blue {
 ion-view.slidebox .slide-green {
   background-color: mediumaquamarine; }
 
-/*
-Source: https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/
-*/
-.video-container {
+ion-view.video .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden; }
-  .video-container iframe {
+  ion-view.video .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-.robot-container {
+ion-view.flexbox .robot-container {
   display: flex;
   flex-direction: row; }
-  .robot-container .robot {
+  ion-view.flexbox .robot-container .robot {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 15px;
     width: 100px;
     height: 120px; }
-    .robot-container .robot img {
+    ion-view.flexbox .robot-container .robot img {
       background-color: thistle;
       border-radius: 50%;
       width: 100px;
