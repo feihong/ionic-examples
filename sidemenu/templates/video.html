@@ -1,8 +1,0 @@
-<ion-view view-title='Embed video' class='video'>
-  <ion-content class='padding'>
-    <div class='video-container' ng-repeat='videoUrl in videoUrls'>
-      {{videoUrl}}
-      <iframe ng-src="{{trustSrc(videoUrl)}}" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </ion-content>
-</ion-view>
