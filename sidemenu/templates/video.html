@@ -3,7 +3,8 @@
     <div ng-repeat='videoUrl in videoUrls'>
       <p>This video is great!</p>
       <div class='video-container'>
-        <iframe ng-src="{{trustSrc(videoUrl)}}" frameborder="0" allowfullscreen></iframe>
+        <iframe ng-src="{{trustSrc(videoUrl)}}" frameborder="0" scrolling="no"
+          allowfullscreen></iframe>
       </div>
     </div>
   </ion-content>
