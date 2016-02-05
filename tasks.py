@@ -5,16 +5,17 @@ from pathlib2 import Path, PurePath
 
 
 TITLE = 'Ionic 1 Examples'
+HERE = Path(__file__).parent
+build_dir = HERE / 'build'
 
 
 @task
 def serve():
     import SimpleHTTPServer
-    if not op.isdir('build'):
+    if not build_dir.exists():
         print 'No build directory. First run `invoke build`.'
         return
-    # os.chdir('build')
-    run('cd build && python -m SimpleHTTPServer')
+    run('cd %s && python -m SimpleHTTPServer' % build_dir)
 
 
 @task
@@ -24,21 +25,21 @@ def build():
     www_dirs = []
     clean()
 
-    if not op.exists('build'):
-        os.mkdir('build')
+    if not build_dir.exists():
+        build_dir.mkdir()
 
-    for item in Path('.').iterdir():
+    for item in HERE.iterdir():
         if item.is_dir():
             www_dir = item / 'www'
             if not item.name.startswith('.') and www_dir.is_dir():
                 www_dirs.append(item.name)
                 src = item / 'www'
-                dest = Path('build') / item.name
+                dest = build_dir / item.name
                 print 'Copying %s to %s' % (src, dest)
                 run('cp -r %s %s' % (src, dest))
 
-    with open('build/index.html', 'w') as fp:
-        body = ''
+    with (build_dir / 'index.html').open('w') as fp:
+        body = u''
         for www_dir in www_dirs:
             body += '  <li><a href="%s">%s</a></li>\n' % (www_dir, www_dir)
 
@@ -48,14 +49,14 @@ def build():
 
 @task
 def clean():
-    if op.isdir('build'):
-        run('rm -rf build/*')
+    if build_dir.exists():
+        run('rm -rf %s/*' % build_dir)
 
 
 @task
 def publish():
     build()
-    run('ghp-import -n -p build')
+    run('ghp-import -n -p %s' % build_dir)
 
 
 INDEX_PAGE_TEMPLATE = """\
