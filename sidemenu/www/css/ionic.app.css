@@ -9735,17 +9735,17 @@ a.button {
 ion-view.cards img {
   background-color: lavender; }
 
-/* ion-slide-box */
-div.slider .slide-cool {
+/* slidebox */
+ion-view.slidebox div.slider {
   height: 210px; }
 
-div.slider .slide-red {
+ion-view.slidebox .slide-red {
   background-color: lightcoral; }
 
-div.slider .slide-blue {
+ion-view.slidebox .slide-blue {
   background-color: powderblue; }
 
-div.slider .slide-green {
+ion-view.slidebox .slide-green {
   background-color: mediumaquamarine; }
 
 /*

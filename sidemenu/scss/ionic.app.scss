@@ -27,9 +27,10 @@ ion-view.cards {
 }
 
 
-/* ion-slide-box */
-div.slider {
-  .slide-cool {
+/* slidebox */
+ion-view.slidebox {
+  // Set the height of ion-slide-box.
+  div.slider {
     height: 210px;
   }
 
