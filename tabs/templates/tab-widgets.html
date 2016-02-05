@@ -1,0 +1,65 @@
+<ion-view view-title="Widgets">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-divider">Text input</ion-item>
+
+      <ion-input class="item item-input">
+        <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input">
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <input type="text" placeholder="Text input">
+      </ion-input>
+      <ion-input class="item item-input item-stacked-label">
+        <ion-label>Stacked label</ion-label>
+        <textarea placeholder="Text area"></textarea>
+      </ion-input>
+      <ion-input class="item item-input">
+        <i class="icon ion-music-note"></i>
+        <ion-label>Inline label</ion-label>
+        <input type="text">
+      </ion-input>
+      <ion-input class="item item-input">
+        <ion-label>Inline label</ion-label>
+        <input type="number">
+      </ion-input>
+
+      <ion-item class="item-divider">Toggle and checkbox</ion-item>
+      <ion-toggle ng-model="settings.enableFriends">Toggle McToggle</ion-toggle>
+      <ion-toggle toggle-class="toggle-royal" ng-model="settings.royalToggle">Royal toggle</ion-toggle>
+      <ion-checkbox ng-model="settings.checky">Checky McCheckbox</ion-checkbox>
+      <ion-checkbox class="checkbox-assertive" ng-model="settings.assertive">Assertive checkbox</ion-checkbox>
+
+      <ion-item class="item-divider">Radio buttons</ion-item>
+      <ion-radio ng-model="choice">Choose A</ion-radio>
+      <ion-radio ng-model="choice">Choose B</ion-radio>
+      <ion-radio ng-model="choice">Choose C</ion-radio>
+      <ion-radio ng-model="choice">Choose D</ion-radio>
+
+      <ion-item class="item-divider">Range</ion-item>
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+      <div class="item range range-positive">
+        <i class="icon ion-ios-sunny-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+
+      <ion-item class="item-divider">Select</ion-item>
+      <div class="item item-input item-select">
+        <ion-label>Lightsaber</ion-label>
+        <select>
+          <option>Blue</option>
+          <option selected>Green</option>
+          <option>Red</option>
+        </select>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view view-title='Slide Box' class='slidebox'>
+  <ion-content>
+    <p class='padding'>Above the slide box</p>
+
+    <ion-slide-box does-continue='true' on-slide-changed='slideHasChanged($index)'>
+      <ion-slide ng-repeat='title in titles' ng-class="'slide-'+colors[$index]">
+        <div class='padding'>
+          <h1>{{title}}</h1>
+          <p>Some very clever text goes here.</p>
+          <p>More scintillating prose! Will it never end?</p>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <p class='padding'>Below the slide box</p>
+  </ion-content>
+</ion-view>

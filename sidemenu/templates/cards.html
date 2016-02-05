@@ -1,0 +1,11 @@
+<ion-view view-title='Cards' class='cards'>
+  <ion-content>
+    <div class='list card'>
+      <div class='item item-avatar' ng-repeat='person in persons'>
+        <img ng-src='img/{{person}}.png'>
+        <h2>{{person}}</h2>
+        <p>{{person}} is a {{adjectives[$index]}} guy!</p>
+      </div>
+    </div>
+  <ion-content>
+</ion-view>
