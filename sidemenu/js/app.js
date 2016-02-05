@@ -70,7 +70,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/video',
       views: {
         menuContent: {
-          templateUrl: 'templates/video.html'
+          templateUrl: 'templates/video.html',
+          controller: 'VideoCtrl'
         }
       }
     })

@@ -73,10 +73,18 @@ angular.module('starter.controllers', [])
   }
 })
 
+.controller('VideoCtrl', function($scope, $sce) {
+  var videoIds = ['px2yZL_XfB0', 'q_Ufv2WxzCg', 'E0M5aCi_P9Q']
+  $scope.videoUrls = videoIds.map(function(id) {
+    return 'https://www.youtube.com/embed/' + id
+  })
+  $scope.trustSrc = $sce.trustAsResourceUrl
+})
+
 .controller('FlexboxCtrl', function($scope) {
   var robots = ['magnetman', 'shadowman', 'snakeman', 'sparkman',
     'magnetman', 'shadowman']
   $scope.robots = robots
 
-  $scope.containerWidth = robots.length * 120 
+  $scope.containerWidth = robots.length * 120
 })
