@@ -38,3 +38,7 @@ pip install invoke
 - [CSS Components](http://ionicframework.com/docs/components/)
 - [Announcing Ionic 1.2](http://blog.ionic.io/announcing-ionic-1-2/)
 - [Ionic Angular directives](https://github.com/driftyco/ionic/tree/master/js/angular/directive)
+
+## Notes
+
+In Mobile Safari, there is a weird issue where scrolling is disabled when you start your drag on top of an iframe (e.g. embedded YouTube video). To fix this, you have to set overflow-scroll to true in ion-content. More details about the fix can be found in [Ionic issue 1151](https://github.com/driftyco/ionic/issues/1151#issuecomment-71114444). An example of the fix can be seen in [Embed Video example page](https://github.com/feihong/ionic-examples/blob/master/sidemenu/www/templates/video.html).
