@@ -86,5 +86,5 @@ angular.module('starter.controllers', [])
     'magnetman', 'shadowman']
   $scope.robots = robots
 
-  $scope.containerWidth = robots.length * 120
+  $scope.containerWidth = robots.length * 100 + (robots.length-1) * 15
 })
