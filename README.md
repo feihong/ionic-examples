@@ -22,12 +22,13 @@ pip install invoke
 
 ## Commands
 
-|-------------|-----------------|
 | **Command** | **Description** |
+|-------------|-----------------|
 | `ionic serve` | Preview your app in the browser |
+| `ionic serve -a` | Make server listen on 0.0.0.0 |
 | `ionic start --list` | List all starter templates |
 | `ionic start -t blank project-name` | Start a blank project |
-| `ionic setup sass | Make `ionic serve` also watch for changes to ionic.app.scss |
+| `ionic setup sass` | Make `ionic serve` also watch for changes to ionic.app.scss |
 | `ionic emulate ios -l -c` | Run your app inside the iOS Simulator with live reload and logging to console |
 | `invoke build` | Copy www directories into a build directory |
 | `invoke serve` | Run a local HTTP server on port 8000 that serves the build directory |
