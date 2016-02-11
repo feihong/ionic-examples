@@ -1,6 +1,26 @@
 import 'ionic-sdk/release/js/ionic.bundle'
 
+const MESSAGES = [
+  'Hello World',
+  'Hola Mundo',
+  'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ',
+  'こんにちは世界',
+  '你好世界',
+  'Përshendetje Botë',
+  'مرحبا بالعالم',
+  'Բարեւ, աշխարհ',
+  'হ্যালো দুনিয়া',
+  'Saluton mondo',
+  'გამარჯობა მსოფლიო',
+]
+
+function getMessage() {
+  let index = Math.floor(Math.random() * MESSAGES.length)
+  return MESSAGES[index]
+}
+
 angular.module('app', ['ionic'])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -17,4 +37,21 @@ angular.module('app', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-});
+})
+
+.controller('HelloWorldCtrl', ($scope) => {
+  let minFont = 12
+  var fontIndex = 0
+
+  $scope.message = null
+  $scope.myStyle = null
+
+  $scope.update = () => {
+    $scope.message = getMessage()
+    fontIndex = (fontIndex + 3) % 80
+    $scope.myStyle = {
+      'font-size': `${minFont + fontIndex}px`
+    }
+  }
+  $scope.update()
+})

@@ -20,3 +20,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // include all of Ionic
 @import "../node_modules/ionic-sdk/scss/ionic";
+
+.message {
+  margin-top: 1em;
+  line-height: 1em;
+  text-align: center;
+}

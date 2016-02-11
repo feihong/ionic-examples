@@ -19,8 +19,11 @@
       <ion-header-bar class="bar-positive">
         <h1 class="title">Hello World with ES6!</h1>
       </ion-header-bar>
-      <ion-content class='padding'>
-        <p>Hello World</p>
+      <ion-content class="padding" ng-controller="HelloWorldCtrl">
+        <button ng-click="update()" class="button button-block button-positive button-outline">
+          Update
+        </button>
+        <div class="message" ng-style="myStyle">{{message}}</div>
       </ion-content>
     </ion-pane>
   </body>

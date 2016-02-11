@@ -1,6 +1,6 @@
 {
   "name": "hello-world-es6",
-  "app_id": "",
+  "app_id": "9bd0ec46",
   "gulpStartupTasks": [
     "webpack",
     "sass",
