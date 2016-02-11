@@ -1,6 +1,6 @@
 # Ionic 1 Examples
 
-This is a collection of examples for Ionic 1.
+This is a collection of examples for Ionic 1, published at http://feihong.github.io/ionic-examples.
 
 ## Installation
 
