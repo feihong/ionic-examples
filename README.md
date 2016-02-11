@@ -41,6 +41,7 @@ pip install invoke
 - [Ionic Angular directives](https://github.com/driftyco/ionic/tree/master/js/angular/directive)
 - [Ionic in Action examples](https://github.com/ionic-in-action)
 - [Ionic and TypeScript screencast tutorials](https://github.com/driftyco/ionic-typescript-example)
+- [Boilerplate Ionic V1 seed project using ES6, Babel, Webpack, etc](https://github.com/ModusCreateOrg/ionic-seed)
 
 ## Notes
 
