@@ -7,9 +7,26 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 
+// Need this to prevent the pipe from breaking on errors, and continue
+// watching files for changes.
+var plumber = require('gulp-plumber');
+
+var webpack = require('webpack-stream');
+var webpackConfig = require('./webpack.config.js');
+
+
 var paths = {
   sass: ['./scss/**/*.scss']
 };
+
+gulp.task('webpack', function() {
+  return gulp.src('./src/app.js')
+    .pipe(plumber())
+    .pipe(webpack(webpackConfig), null, function(err, stats) {
+        console.log(stats);
+    })
+    .pipe(gulp.dest('./www'))
+});
 
 gulp.task('default', ['sass']);
 

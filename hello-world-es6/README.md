@@ -9,5 +9,5 @@ A minimal Ionic application that is written using ES6. The configuration changes
 
 ```
 npm install --save ionic-sdk
-npm install --save-dev babel-core babel-eslint babel-loader babel-polyfill babel-preset-es2015 ng-annotate-loader eslint-loader webpack
+npm install --save-dev babel-core babel-eslint babel-loader babel-polyfill babel-preset-es2015 ng-annotate-loader eslint-loader webpack webpack-stream gulp-plumber
 ```
