@@ -3,3 +3,5 @@
 build/
 bundle.js
 *.map
+ionic.app.css
+ionic.app.min.css
