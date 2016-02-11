@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="bundle.js"></script>
+  </head>
+
+  <body ng-app="app">
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">Hello World with ES6!</h1>
+      </ion-header-bar>
+      <ion-content class="padding" ng-controller="HelloWorldCtrl">
+        <button ng-click="update()" class="button button-block button-positive button-outline">
+          Update
+        </button>
+        <div class="message" ng-style="myStyle">{{message}}</div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
