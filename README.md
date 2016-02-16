@@ -40,8 +40,8 @@ pip install invoke
 - [Announcing Ionic 1.2](http://blog.ionic.io/announcing-ionic-1-2/)
 - [Ionic Angular directives](https://github.com/driftyco/ionic/tree/master/js/angular/directive)
 - [Ionic in Action examples](https://github.com/ionic-in-action)
-- [Ionic and TypeScript screencast tutorials](https://github.com/driftyco/ionic-typescript-example)
 - [Boilerplate Ionic V1 seed project using ES6, Babel, Webpack, etc](https://github.com/ModusCreateOrg/ionic-seed)
+- [A simple boilerplate for Ionic using ES6, Webpack and Angular 1.4](https://github.com/ByJC/ionic-es6-webpack-boilerplate)
 
 ## Notes
 
