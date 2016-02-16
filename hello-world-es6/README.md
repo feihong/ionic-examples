@@ -9,7 +9,7 @@ A minimal Ionic application that is written using ES6. The configuration changes
 
 ```
 npm install --save ionic-sdk
-npm install --save-dev babel-core babel-eslint babel-loader babel-polyfill babel-preset-es2015 ng-annotate-loader eslint-loader webpack webpack-stream gulp-plumber
+npm install --save-dev babel-core babel-eslint babel-loader babel-polyfill babel-preset-es2015 ng-annotate-loader eslint-loader eslint webpack webpack-stream gulp-plumber
 ```
 
 ## Configuration
@@ -41,6 +41,14 @@ gulp.task('webpack', function() {
 });
 ```
 
+Create a `src/app.js` file:
+
+```
+import 'ionic-sdk/release/js/ionic.bundle'
+```
+
+Copy the code from the `js` directory into the `src/app.js` file. Afterwards, delete the `js` directory.
+
 Delete everything in `www/lib/ionic` except the fonts directory and maybe the version.json file.
 
 Inside `scss/ionic.app.scss`, change the "include all of Ionic" line to:
@@ -59,7 +67,7 @@ Inside `ionic.project`, make sure you have:
 ]
 ```
 
-Delete `css/style.css` and create `css\.gitkeep`.
+Delete `www/css/style.css` and create `www/css\.gitkeep`.
 
 ## Build
 
